@@ -87,6 +87,7 @@ class RadioPage extends StatelessWidget {
                     width: MediaQuery.of(context).size.width,
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         BroadcastRadioTile(
                           index: i.toString(),
@@ -96,9 +97,9 @@ class RadioPage extends StatelessWidget {
                           index: '${i}a',
                         ),
                         const Divider(height: 0),
-                        BroadcastRadioTile(
-                          index: '${i}b',
-                        ),
+                        // BroadcastRadioTile(
+                        //   index: '${i}b',
+                        // ),
                       ],
                     ),
                   );
